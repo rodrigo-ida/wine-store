@@ -1,0 +1,63 @@
+.special-collection{
+
+    background-image: url('../../assets/specialColletionBackgroundImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 465px;
+    width: 100%;
+    top: 133px; 
+    
+}
+
+.special-collection__description{
+    padding-top: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    line-height: 40px;
+    
+}
+
+.special-collection__description h1{
+    
+    font-size: 70px;
+    padding: 0;
+
+
+}
+.special-collection__description p{
+    
+    font-size: 30px;
+    padding: 0;
+
+
+
+}
+.special-collection__description h2{
+
+    font-family: 'Great Vibes', cursive;
+    color: #ae8253;
+    font-size: 74px;
+    font-weight: lighter;
+    padding: 0;
+
+}
+
+.special-collectionBtn{
+
+    height: 50px;
+    width: 200px;
+    background-color:#ae8253;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.special-collectionBtn:hover{
+
+    background-color: black;
+    color: white;
+}

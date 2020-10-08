@@ -1,0 +1,33 @@
+
+.promocoes-container{
+    display: flex;
+    margin: 10px 0 0 0;
+    width: 100%;
+    justify-content: center;
+    /* padding-left: 10px; */
+
+}
+
+.promocoes-container__fresh{
+    height: 288px;
+    width: 421px;
+    background-image: url('../../assets/pos-header-img1.png');
+}
+
+.promocoes-container__special{
+    height: 288px;
+    width: 421px;
+    margin: 0 10px ;
+    background-image: url('../../assets/pos-header-img2.png');
+
+
+}
+
+.promocoes-container__quality{
+
+    height: 288px;
+    width: 421px;
+    background-image: url('../../assets/pos-header-img3.png');
+
+
+}

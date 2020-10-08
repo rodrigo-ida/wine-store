@@ -1,0 +1,87 @@
+
+.trending{
+
+    width: 100%;
+    padding-top: 35px;
+}
+
+.trending__header{
+    position: relative;
+    z-index: 3;
+    
+}
+
+.trending__fantasy-header{
+
+    color: rgba(175, 131, 84, 0.5);
+    font-size: 88px;
+    line-height: 0px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 14px;
+    font-weight: 600;
+    margin-top: -44px;
+
+
+}
+
+.trending__buttons{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 23px 368px;
+
+
+}
+
+.trending__buttons a{
+
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: block;
+    border-radius: 30px;
+
+    
+    
+}
+
+.trending__buttons button{
+    
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+
+
+}
+
+.trending__buttons button:hover, .trending__buttons button a:hover {
+    
+    color: white;
+    background-color: #af8254;
+    /* padding: 15px;
+    border-radius: 30px; */
+
+}
+
+.trending__buttons button a .active{
+
+    color: white;
+    background-color: #af8254;
+
+
+}
+
+.trending__buttons__btn-destaque .active,
+.trending__buttons__btn-novidades .active,
+.trending__buttons__btn-mais .active{
+
+    
+    color: white;
+    background-color: #af8254;
+
+}
+
+
+
+

@@ -1,0 +1,30 @@
+.carouselPhoto{
+
+    width: calc(100% / 3);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.carouselHeader__fotoContainer__foto1{
+
+    background-image: url('../../../assets/carousel_1.png');
+
+}
+
+.carouselHeader__fotoContainer__foto2{
+
+    background-image: url('../../../assets/carousel_2.png');
+    background-position-x: -100px;
+
+}
+
+.carouselHeader__fotoContainer__foto3{
+
+    background-image: url('../../../assets/carousel/carouselImg5.jpg');
+    background-position-y: -350px;
+
+
+}

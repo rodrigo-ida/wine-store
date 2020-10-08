@@ -1,0 +1,34 @@
+.shop-category__description__card{
+
+    width: 24%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon{
+    font-size: 30px;
+    
+}
+
+.icon__container{
+    
+    padding: 27px;
+    border-radius: 40px;
+    background-color: white;
+    transition: all .5s ease-out, padding .5s ease-out;
+    box-shadow: 1px 1px 2px thistle, -1px -1px 2px thistle;
+
+
+}
+
+.icon__container:hover{
+
+    box-shadow: 6px 6px 30px 5px thistle, -6px -6px 30px 5px thistle;
+    /* transform: scale(1.2); */
+
+}
+

@@ -1,0 +1,18 @@
+.header{
+    height: 560px;
+    width: 100%;
+    background-color: #150f19;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.header__logo{
+    margin-top: 10px;
+    background-image: url('../../assets/logo\ \(2\).jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 122px;
+    width: 110px
+}

@@ -1,0 +1,93 @@
+
+.trending__novidades{
+
+    overflow-x: hidden;
+}
+
+
+
+.trending__novidades__cards{
+
+    width: 3957px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    position: relative;
+    left: 0px;
+    
+    
+    /* transition: left .2s ; */
+    cursor: grab;
+}
+
+
+.trending__novidades__buttons{
+
+    display: flex;
+    width: 80px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.trending__novidades__buttons button{
+
+    border-radius: 20px;
+    padding: 6px 10px;
+    transition: background-color .3s ease-in;
+    background-color: white;
+    border:  #af8254 1px solid ;
+}
+
+.trending__novidades__left::after{
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 567px;
+    top: 2654px;
+
+}
+.trending__novidades__left::before{
+    content: '';
+    width: 54px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 582px;
+    top: 2660px;
+
+}
+.trending__novidades__right::after{
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 714px;
+    top: 2654px;
+
+
+}
+.trending__novidades__right::before{
+    content: '';
+    width: 54px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 715px;
+    top: 2660px;
+}
+
+
+
+.trending__novidades__buttons button:hover{
+
+    color: white;
+    background-color: black;
+
+}

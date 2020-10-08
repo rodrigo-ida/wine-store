@@ -1,0 +1,168 @@
+.footer{
+
+    background-image: url('../../assets/footer.png');
+    width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position: right 35% bottom -20%;
+}
+
+.footer__subscribe{
+
+    color:  rgba(255,255,255,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    
+    
+}
+
+.footer__subscribe-h2{
+    display: block;
+    width: 100%;
+    margin-bottom: 41px;
+
+}
+
+.footer__subscribe__email-input{
+
+    background-color:  rgba(255,255,255,0.3);
+    height: 50px;
+    width: 410px;
+
+}
+
+.footer__subscribe__submit-btn{
+
+    margin-left: 20px;
+    width: 100px;
+    background-color: #ae8253;
+    border: none;
+    color: white;
+    font-size: larger;
+
+
+}
+
+/* rgba(255,255,255,0.3) */
+
+
+.footer__container-links{
+
+    height: 81px;
+    width: 100%;
+    
+
+}
+
+.footer__list{
+    
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer__list li{
+    margin-left: 20px;
+    list-style: none;
+    font-family: Lato;
+    display: inline;
+
+
+}
+
+.footer__list li::after{
+    content: "|";
+    position: relative;
+    left: auto;
+    margin: 0 8px;
+    right: -14px;
+    top: 1px;
+    color: rgba(173,173,173,0.5);
+
+
+}
+
+.footer__list li a{
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+
+
+}
+
+.footer__bottom{
+    height: 56px;
+    background-color: #ae8253;
+    width: 100%;
+    padding: 39px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    align-self: flex-end;
+
+}
+
+.footer__bottom-icons{
+
+    display: flex;
+
+
+}
+
+.fa-facebook-f{
+    color: white;
+    background: blue;
+    padding: 10px 13px;
+    border-radius: 20px;
+}
+
+.fa-twitter{
+    color: white;
+    background: #00aced;
+    padding: 10px 11px;
+    border-radius: 20px;
+}
+.fa-instagram{
+    color: white;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 11px;
+    border-radius: 20px;
+}
+.fa-pinterest-p{
+    color: white;
+    background:#cb2027;
+    padding: 10px 11px;
+    border-radius: 20px;
+}
+
+.footer__cards{
+    display: flex;
+    padding-top: 20px;
+
+
+}
+
+.cards__icon{
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.visa{
+    background-image: url('../../assets/visa.png');
+}
+.paypal{
+    background-image: url('../../assets/paypal.png');
+}
+.mastercard{
+    background-image: url('../../assets/mastercard.png');
+}
+.americanexpress{
+    background-image: url('../../assets/americanExpress.png');
+}

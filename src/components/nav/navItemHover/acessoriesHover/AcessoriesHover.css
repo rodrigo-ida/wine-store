@@ -1,0 +1,48 @@
+.acessorios-hover{
+    width: 435px;
+        height: 289px;
+        position: absolute;
+        left: -4px;
+        top: 56px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        list-style: none;
+
+        
+    }
+    
+    
+    .acessorios-hover__main-list{
+        
+    color:#666666;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.acessorios-hover__list, .acessorios-hover__latest{
+    height: 289px;
+    list-style: none;
+    text-align: left;
+    color: #666666;
+    line-height: calc(289px / 10);
+
+}
+
+.acessorios-hover__list::first-line, .acessorios-hover__latest::first-line{
+    color: black;
+    font-weight: bolder;
+
+}
+
+.acessorios-hover__latest{
+
+    margin-right: 50px;
+}
+
+.acessorios-hover__list li:hover{
+    color: black;
+}
