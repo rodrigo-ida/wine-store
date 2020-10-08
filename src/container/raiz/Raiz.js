@@ -5,7 +5,7 @@ import Header from '../../components/header/Header'
 import Nav from '../../components/nav/nav'
 import Carousel from '../../components/carouselHeader/CarouselHeader'
 import ScrollModal from '../../components/scrollModal/ScrollModal'
-import Promocoes from '../../components/promocoes/Promocoes'
+import Sales from '../../components/promocoes/Promocoes'
 import OurNumbers from '../../components/ourNumbers/OurNumbers'
 import Trending from '../../components/trending/Trending'
 import TrendingDestaque from '../../components/trending/trendingDestaque/TrendingDestaque'
@@ -37,8 +37,8 @@ class Raiz extends Component {
     hideNavModal = () => this.setState({navModalState: false})
 
     screenOverflow = props =>{
-        let pagina = document.querySelector('body')
-        pagina.style.overflow = props
+        const body = document.querySelector('body')
+        body.style.overflow = props
 
     }
 
@@ -72,7 +72,6 @@ class Raiz extends Component {
         const cardWidth = document.querySelector('.shop-category__description__card').clientWidth
 
         if(event.target.className === 'shop-category__description__btn-left' && this.ShopByCategoryBtnCounter < 0){
-            console.log('esquerda');
             this.ShopByCategoryBtnCounter += cardWidth
         }
         if(event.target.className === 'shop-category__description__btn-right' ){
@@ -100,7 +99,7 @@ class Raiz extends Component {
                 </div>
                 <ScrollModal subscribeModalState={this.state.subscribeModalState} hideSubscribeModal={this.hideSubscribeModal}/>
                 <div className="main">
-                    <Promocoes />
+                    <Sales />
                     <OurNumbers />
                     <Trending />
                     <Switch>
