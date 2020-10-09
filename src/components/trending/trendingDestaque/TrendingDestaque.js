@@ -19,19 +19,19 @@ export default props => {
 
         <TrendingBody >
 
-                <Card img={Img1} body={body} title="Beaurdaux Mambo" />
-                <Card img={Img2} body={body} title="Sangue de Boi"/>
-                <Card img={Img3} body={body} title="Boauvead"/>
-                <Card img={Img4} body={body} title="Scar"/>
-                <Card img={Img4} body={body} title="Scar"/>
-                <Card img={Img4} body={body} title="Scar"/>
-                <Card img={Img1} body={body} title="Beaurdaux Mambo" />
-                <Card img={Img2} body={body} title="Sangue de Boi"/>
-                <Card img={Img3} body={body} title="Boauvead"/>
-                <Card img={Img4} body={body} title="Scar"/>
-                <Card img={Img4} body={body} title="ULTIMO"/>
-                <Card img={Img4} body={body} title="ULTIMO"/>
-
+                <Card img={Img1} body={body} title="Beaurdaux " />
+                <Card img={Img2} body={body} title="Bordeaux"/>
+                <Card img={Img3} body={body} title="Burgundy"/>
+                <Card img={Img4} body={body} title="Loire"/>
+                <Card img={Img4} body={body} title="Provence"/>
+                <Card img={Img4} body={body} title="Region"/>
+                <Card img={Img1} body={body} title="Nebbiolo" />
+                <Card img={Img2} body={body} title="Montepulciano"/>
+                <Card img={Img3} body={body} title="Barbera"/>
+                <Card img={Img4} body={body} title="Primitivo"/>
+                <Card img={Img4} body={body} title="Dolcetto"/>
+                <Card img={Img4} body={body} title="Monsant"/>
+                
         </TrendingBody>
 
     )

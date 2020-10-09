@@ -34,6 +34,12 @@
     background-color:  rgba(255,255,255,0.3);
     height: 50px;
     width: 410px;
+    
+}
+
+.footer__subscribe__email-input::placeholder{
+    
+    color: rgba(255,255,255,0.7);
 
 }
 
@@ -48,9 +54,6 @@
 
 
 }
-
-/* rgba(255,255,255,0.3) */
-
 
 .footer__container-links{
 

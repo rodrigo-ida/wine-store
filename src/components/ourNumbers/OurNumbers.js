@@ -8,7 +8,7 @@ export default props => {
         <div className="our-numbers-container">
             <div className="our-numbers-container__img"></div>
             <div className="our-numbers-container__numbers">
-                <h1>CRUS WINE STORE</h1>
+                <h1>WINE STORE</h1>
                 <p className="our-numbers-container__numbers__p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Duis tristique est ut augue vehicula, vitae convallis lectus consequat. 
                     Quisque sed dapibus nisi, ut venenatis nunc. Nam posuere mauris diam, in semper tellus cursus vel. 
