@@ -11,11 +11,11 @@ export default props => {
     return(
         <div className={show}> 
             <div className="scroll-modal__container">
-                <div className="scroll-modal__container__close">
-                <button className="scroll-modal__container__close__button" onClick={props.hideSubscribeModal}> X </button>
-            </div>
             <div className="scroll-modal__container__img"></div>
             <div className="scroll-modal__container__contato">
+                <div className="scroll-modal__container__close">
+                    <button className="scroll-modal__container__close__button" onClick={props.hideSubscribeModal}> X </button>
+                </div>
                 <h1>Cadastre-se e ganhe descontos incríveis!!!</h1>
                 <p> Cadastre-se em nossa newsletter e receba novidades sobre nossos novos produtos.</p>
                 <input className="scroll-modal__container__contato__email" type="text" placeholder="Coloque seu Email" />

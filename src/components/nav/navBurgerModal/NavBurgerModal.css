@@ -1,0 +1,72 @@
+.nav__burger-modal{
+    width: 50%;
+    position: relative;
+    background-color: inherit;
+    z-index: 11;  /* z index do botao carousel =  10 */
+    height: calc(100vh - 170px);
+}
+
+.nav__burger-modal__list{  
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.nav__burger-modal__list div {  
+
+    border-bottom: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+    height: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav__burger-modal__list li{
+    list-style: none;
+}
+
+.nav__burger-modal__list li a{  
+
+    text-decoration: none;
+    color: white;
+
+}
+
+/* 
+.nav__burger-modal__list__icones{
+    
+    display: flex;
+    width: 130px;
+    justify-content: space-evenly;  
+    padding: 15px 5px;
+    padding-bottom: 0;
+    z-index: 2;
+    
+}
+
+.nav__burger-modal__list__icones li{
+    list-style: none;
+    font-size: 15px;
+}
+
+.nav__burger-modal__list__icones__qtd{
+    position: absolute;
+    top: 20px;
+    left: 1265px;
+    z-index: 3;
+    background-color: #af8254;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0px 6px;
+}
+
+*/

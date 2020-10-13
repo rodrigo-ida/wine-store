@@ -1,0 +1,55 @@
+.nav-mobile-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+
+}
+.nav__burger-btn{
+
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    height: 45px;
+    margin: 0 10px;
+    padding: 15px;
+    padding-bottom: 0;
+    cursor: pointer;
+
+}
+
+.nav__burger-btn:focus, .nav__burger-btn:active{
+    outline: none;
+
+}
+
+
+.nav__item__container__list__icones{
+    
+    display: flex;
+    width: 130px;
+    justify-content: space-evenly;  
+    padding: 15px 5px 0 0;
+    z-index: 2;
+    
+}
+
+.nav__item__container__list__icones li{
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav__item__container__list__icones__qtd{
+    position: relative;
+    top: -50px;
+    left: 14px;
+    z-index: 3;
+    background-color: #af8254;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 10px;
+    padding-left: 1px;
+
+}

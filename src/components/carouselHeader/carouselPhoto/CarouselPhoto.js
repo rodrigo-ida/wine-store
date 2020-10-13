@@ -5,6 +5,6 @@ import './CarouselPhoto.css'
 export default props => {
 
     return (
-        <div className={'carouselPhoto' + ' ' + props.classPhoto}></div>
+        <div className={`carouselPhoto ${props.classPhoto}`}></div>
     )
 }

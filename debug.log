@@ -1,0 +1,5 @@
+[1012/171837.162:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1012/225248.756:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1012/225248.819:ERROR:exception_snapshot_win.cc(99)] thread ID 9464 not found in process
+[1012/225248.756:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1012/225248.819:ERROR:exception_snapshot_win.cc(99)] thread ID 12144 not found in process

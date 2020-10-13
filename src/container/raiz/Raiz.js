@@ -20,6 +20,8 @@ class Raiz extends Component {
     state = {
         navModalState: false,
         subscribeModalState: false,
+        responsivityActivation: false,
+        navBurgerBtnState: false
     }
 
     ShopByCategoryBtnCounter = 0
@@ -28,9 +30,33 @@ class Raiz extends Component {
     componentDidMount(){
 
         this.showSubscribeEmailModal()
+        this.responsivityActivation()
+        window.addEventListener('resize', this.responsivityActivation);
 
     }
 
+    responsivityActivation = () => {
+
+
+
+        const windowWidth = window.screen.width
+        if(windowWidth < 900){
+            this.setState({responsivityActivation: true}, ()=>console.log(this.state.responsivityActivation))
+        }else{
+            this.setState({responsivityActivation: false}
+            )
+
+        }
+        console.log(windowWidth);
+        console.log(this.state.responsivityActivation);
+    }
+
+    burgerButtonHandler = ()=>{
+
+        const navBurgerBtnState = this.state.navBurgerBtnState
+        this.setState({navBurgerBtnState: !navBurgerBtnState})
+    }
+    
     showNavModal = event => this.setState({navModalState: event.target.className})
 
 
@@ -91,10 +117,18 @@ class Raiz extends Component {
     render(){
 
         return(
-            <div className="raiz">
-                <Header />
+            <div className="raiz" >
+                <Header >
+                    <Nav 
+                        showNavModal={this.showNavModal} 
+                        navModalState={this.state.navModalState} 
+                        hideNavModal={this.hideNavModal}
+                        responsivityActivation={this.state.responsivityActivation}
+                        burgerButtonHandler={this.burgerButtonHandler}
+                        navBurgerBtnState={this.state.navBurgerBtnState}
+                    />
+                </Header>
                 <div className="Carousel__container" >
-                    <Nav showNavModal={this.showNavModal} navModalState={this.state.navModalState} hideNavModal={this.hideNavModal}/>
                     <Carousel />
                 </div>
                 <ScrollModal subscribeModalState={this.state.subscribeModalState} hideSubscribeModal={this.hideSubscribeModal}/>

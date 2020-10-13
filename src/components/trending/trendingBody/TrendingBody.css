@@ -8,6 +8,100 @@
 
 .trending__body__cards{
 
+    width: 300vw;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    position: relative;
+    left: 0px;
+    
+    
+    /* transition: left .2s ; */
+    cursor: grab;
+}
+
+
+.trending__body__buttons{
+
+    display: flex;
+    width: 80px;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.trending__body__buttons button{
+
+    border-radius: 20px;
+    padding: 6px 10px;
+    transition: background-color .3s ease-in;
+    background-color: white;
+    border:  #af8254 1px solid ;
+}
+/* 
+.trending__body__left::after{
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 567px;
+    top: 2579px;
+
+}
+.trending__body__left::before{
+    content: '';
+    width: 54px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 582px;
+    top: 2585px;
+
+}
+.trending__body__right::after{
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 714px;
+    top:2579px;
+
+}
+.trending__body__right::before{
+    content: '';
+    width: 54px;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    left: 715px;
+    top: 2585px;
+} */
+
+
+
+.trending__body__buttons button:hover{
+
+    color: white;
+    background-color: black;
+
+}
+
+@media (min-width: 900px ){
+    
+.trending__body{
+
+    overflow-x: hidden;
+}
+
+
+
+.trending__body__cards{
+
     width: 3957px;
     height: 620px;
     display: flex;
@@ -89,4 +183,5 @@
     color: white;
     background-color: black;
 
+}
 }

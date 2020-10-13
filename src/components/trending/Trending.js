@@ -12,7 +12,7 @@ export default props => {
             <h2 className="trending__fantasy-header"> Trending</h2>
             <div className="trending__buttons">
 
-                <button className="trending__buttons__btn-destaque"> <NavLink to="/trendingDestaque" >Produtos Em Destaque</NavLink> </button>
+                <button className="trending__buttons__btn-destaque"> <NavLink to="/trendingDestaque" >Destaque</NavLink> </button>
                 <button className="trending__buttons__btn-novidades"> <NavLink to="/trendingNovidades" >Novidades </NavLink></button>
                 <button className="trending__buttons__btn-mais"> <NavLink to="/trendingMais" >Mais Vendidos </NavLink></button>
 

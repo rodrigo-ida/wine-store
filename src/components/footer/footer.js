@@ -13,12 +13,12 @@ export default props =>{
                 <button type="submit" className="footer__subscribe__submit-btn"> Enviar</button>
             </div>
             <div className="footer__container-links" >
-                <ul className="footer__list">
+                <ul className="footer__main-list">
                     <li><Link to="#"> Promoções</Link></li>
                     <li><Link to="#"> Novos Produtos</Link></li>
                     <li><Link to="#"> Melhores Produtos</Link></li>
                 </ul>
-                <ul className="footer__list">
+                <ul className="footer__second-list">
                     <li><Link to="#"> Delivery</Link></li>
                     <li><Link to="#"> Informações Legais</Link></li>
                     <li><Link to="#"> Nossos Termos</Link></li>
@@ -34,7 +34,7 @@ export default props =>{
                         <i className="fab fa-twitter"></i>
                         <i className="fab fa-instagram"></i>
                         <i className="fab fa-pinterest-p"></i>
-                    </div>
+                </div>
                     <div className="footer__copyright" >
                         <p>&#169; 2020, Todos os direitos reservados. Desenvolvido por Rodrigo Ida</p>
                     </div>

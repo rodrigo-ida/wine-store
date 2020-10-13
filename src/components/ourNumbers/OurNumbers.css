@@ -1,8 +1,10 @@
 .our-numbers-container{
 
-    height: 100vh;
-    width: 100%;
+    height: 200vh;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #faf7f2;
 
 }
@@ -10,7 +12,7 @@
 .our-numbers-container__img{
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url('../../assets/nossos-numeros.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,6 +23,7 @@
 .our-numbers-container__numbers{
 
     width: 100%;
+    height: 100vh;
     text-align: left;
     line-height: 35px;
     color: #666666;
@@ -55,4 +58,67 @@
 .our-numbers-container__numbers__p2{
 
     width: 90%;
+}
+
+
+@media (min-width: 900px){
+
+    .our-numbers-container{
+
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: #faf7f2;
+    
+    }
+    
+    .our-numbers-container__img{
+    
+        width: 100%;
+        height: 100%;
+        background-image: url('../../assets/nossos-numeros.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    
+    }
+    
+    .our-numbers-container__numbers{
+    
+        width: 100%;
+        text-align: left;
+        line-height: 35px;
+        color: #666666;
+    
+    
+    }
+    
+    .our-numbers-container__numbers h1{
+    
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    
+    
+    .our-numbers-container__numbers__p1::first-letter,
+    .our-numbers-container__numbers__p2::first-letter{
+    
+        font-size: 70px;
+        color: #d5bda3;
+    }
+    
+    
+    .our-numbers-container__numbers__p1{
+    
+        padding-bottom: 40px;
+        width: 90%;
+    
+    
+    }
+    
+    .our-numbers-container__numbers__p2{
+    
+        width: 90%;
+    }
 }

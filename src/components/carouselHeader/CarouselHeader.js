@@ -12,7 +12,7 @@ class Carousel extends Component{
 
     componentDidMount(){
 
-         this.execucaoCarousel(4000)
+         this.execucaoCarousel(20000)
 
     }
 
