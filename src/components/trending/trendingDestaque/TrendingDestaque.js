@@ -32,6 +32,7 @@ export default props => {
                 <Card img={Img4} body={body} title="Dolcetto"/>
                 <Card img={Img4} body={body} title="Monsant"/>
                 
+                
         </TrendingBody>
 
     )

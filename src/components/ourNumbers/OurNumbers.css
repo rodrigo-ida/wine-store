@@ -1,33 +1,35 @@
 .our-numbers-container{
 
-    height: 200vh;
+    height: 207vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #faf7f2;
-
+    
+    
 }
 
 .our-numbers-container__img{
-
+    
     width: 100%;
     height: 100vh;
     background-image: url('../../assets/nossos-numeros.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
+    
 }
 
 .our-numbers-container__numbers{
-
+    
     width: 100%;
     height: 100vh;
     text-align: left;
     line-height: 35px;
     color: #666666;
-
+    padding: 0px 0px 20px 30px;
+    
 
 }
 
@@ -69,6 +71,8 @@
         width: 100%;
         display: flex;
         background-color: #faf7f2;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     
     }
     

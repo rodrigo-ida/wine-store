@@ -6,7 +6,12 @@ export default props => {
 
     let MOUSE_MOVIMENT = 0
     let DRAG_TOGGLE = false
+    let DRAG_TOGGLE_TOUCH = false
     let BTN_CLICK_COUNTER = 0
+
+    let TOUCH_START = 0
+    let TOUCH_MOVIMENT = 0
+    let TOUCH_END = 0
 
     const dragBegins = event => DRAG_TOGGLE = true
 
@@ -61,11 +66,45 @@ export default props => {
 
     }
 
+    const touchBegins = event => {
+
+        // const start = 
+        TOUCH_START = event.changedTouches[0].clientX
+    }
+
+    const touching = event => {
+
+        const touchMoviment =  (event.changedTouches[0].clientX - TOUCH_START)
+
+        if(TOUCH_MOVIMENT >= -540){
+            TOUCH_MOVIMENT = touchMoviment + TOUCH_END
+        }
+        if(TOUCH_MOVIMENT < -540){
+            TOUCH_MOVIMENT = -540
+        }
+        if(TOUCH_MOVIMENT > 0){
+            TOUCH_MOVIMENT = 0
+        }
+
+
+
+        let div = document.querySelector('.trending__body__cards')
+        div.style.left = TOUCH_MOVIMENT + 'px'
+    }
+
+    const touchEnds = event => TOUCH_END = TOUCH_MOVIMENT
 
     return (
 
         <div className="trending__body">
-            <div className="trending__body__cards" onMouseDown={dragBegins} onMouseMove={dragging} onMouseUp={dragEnds}>
+            <div className="trending__body__cards" 
+            onMouseDown={dragBegins} 
+            onMouseMove={dragging} 
+            onMouseUp={dragEnds}
+            onTouchStart={touchBegins}
+            onTouchMove={touching}
+            onTouchEnd={touchEnds}>
+            
 
                 {props.children}
                 

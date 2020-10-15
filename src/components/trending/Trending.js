@@ -15,7 +15,7 @@ export default props => {
                 <button className="trending__buttons__btn-destaque"> <NavLink to="/trendingDestaque" >Destaque</NavLink> </button>
                 <button className="trending__buttons__btn-novidades"> <NavLink to="/trendingNovidades" >Novidades </NavLink></button>
                 <button className="trending__buttons__btn-mais"> <NavLink to="/trendingMais" >Mais Vendidos </NavLink></button>
-
+ 
             </div>
         </div>
 

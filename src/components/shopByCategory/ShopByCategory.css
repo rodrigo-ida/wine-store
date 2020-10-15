@@ -1,10 +1,13 @@
+
 .shop-category{
 
-    height: 715px;
+    height: 130vh;
     width: 100%;
     display: flex;
     background-color: #faf7f2;
     padding: 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .shop-category__fantasy-header{
@@ -15,36 +18,40 @@
     letter-spacing: 20px;
     font-weight: 400;
     margin-top: -44px;
+    margin-bottom: 0;
 }
 
 .shop-category__img{
     background-image: url('../../assets/shopByCategoryImg.png');
-    width: 89%;
-    height: 100%;
+    background-size: contain;
+    width: 100vw;
+    height: 40%;
+    margin: 10px;
     background-repeat: no-repeat;
-    margin-top: 35px;
 
 
 }
 
 .shop-category__description{
-
+    
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 60%;
+    overflow-x: hidden;
 
 }
 
 .shop-category__description__categories{
 
     width: 200%;
-    height: 70%;
+    height: 68%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
     left: 0;
-    transition: left .2s ease-in-out;
+    /* transition: left .2s ease-in-out; */
+    margin-top: 46px;
+
     
 
     
@@ -52,7 +59,7 @@
 
 
 .shop-category__description__buttons{
-
+    
     display: flex;
     width: 80px;
     
@@ -60,7 +67,7 @@
     
     justify-content: space-between;
     margin: 0px auto;
-
+    
 }
 
 .shop-category__description__buttons button{
@@ -80,7 +87,7 @@
     background-color: black;
     
     }
-/* 
+    /* 
     .shop-category__description__btn-left::after{
         content: '';
         width: 69px;
@@ -109,8 +116,8 @@
         position: absolute;
         left: 1044px;
         top: 3810px;
-    
-    
+        
+        
     }
     .shop-category__description__btn-right::before{
         content: '';
@@ -121,3 +128,132 @@
         left: 1044px;
         top: 3817px;
     } */
+
+@media (min-width: 900px){
+
+    
+    .shop-category{
+
+        height: 715px;
+    width: 100%;
+    display: flex;
+    background-color: #faf7f2;
+    padding: 20px 0;
+}
+
+.shop-category__fantasy-header{
+    color: rgba(175, 131, 84, 0.2);
+    font-size: 88px;
+    line-height: 0px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 20px;
+    font-weight: 400;
+    margin-top: -44px;
+}
+
+.shop-category__img{
+    background-image: url('../../assets/shopByCategoryImg.png');
+    width: 89%;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+
+
+}
+
+.shop-category__description{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.shop-category__description__categories{
+
+    width: 200%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    transition: left .2s ease-in-out;
+    
+
+    
+}
+
+
+.shop-category__description__buttons{
+    
+    display: flex;
+    width: 80px;
+    
+
+    
+    justify-content: space-between;
+    margin: 0px auto;
+    
+}
+
+.shop-category__description__buttons button{
+
+    border-radius: 20px;
+    padding: 6px 10px;
+    background-color: white;
+    border:  #af8254 1px solid ;
+}
+
+
+
+
+.shop-category__description__buttons button:hover{
+    
+    color: white;
+    background-color: black;
+    
+    }
+    /* 
+    .shop-category__description__btn-left::after{
+        content: '';
+        width: 69px;
+        height: 1px;
+        background-color:lightgray;
+        position: absolute;
+        left: 897px;
+        top: 3810px ; 
+    
+    }
+    .shop-category__description__btn-left::before{
+        content: '';
+        width: 53px;
+        height: 1px;
+        background-color:lightgray;
+        position: absolute;
+        left: 912px;
+        top: 3817px;
+    
+    }
+    .shop-category__description__btn-right::after{
+        content: '';
+        width: 69px;
+        height: 1px;
+        background-color:lightgray;
+        position: absolute;
+        left: 1044px;
+        top: 3810px;
+        
+        
+    }
+    .shop-category__description__btn-right::before{
+        content: '';
+        width: 53px;
+        height: 1px;
+        background-color:lightgray;
+        position: absolute;
+        left: 1044px;
+        top: 3817px;
+    } */
+
+    }

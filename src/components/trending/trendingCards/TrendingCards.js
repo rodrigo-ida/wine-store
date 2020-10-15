@@ -11,7 +11,7 @@ export default props => {
                 <img src={props.img} alt="um vinho bonito" draggable='false' />
             </div>
             <div className="card__description" >
-                <h1 > {props.title}</h1>
+                <h1 className="card__description__title" > {props.title}</h1>
                 <p className="card__description__p"> {props.body}</p>
                 <p className="card__description__price"> R$ {(Math.random() * 20).toFixed(2)}</p>
                 <button className="card__btn"> Incluir </button>

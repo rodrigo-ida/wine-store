@@ -10,9 +10,13 @@ class Carousel extends Component{
         carouselActive: true
     }
 
+    CAROUSEL_TOUCH_START = 0
+    CAROUSEL_TOUCH_MOVIMENT 
+    CAROUSEL_TOUCH_END = 0
+
     componentDidMount(){
 
-         this.execucaoCarousel(20000)
+         this.execucaoCarousel(200000)
 
     }
 
@@ -34,7 +38,7 @@ class Carousel extends Component{
             }
         }
             
-            this.setState({ carouselImgCounter: carouselImgCounter}, ()=> {this.carouselMoviment(this.state.carouselImgCounter)})
+        this.setState({ carouselImgCounter: carouselImgCounter}, ()=> {this.carouselMoviment(this.state.carouselImgCounter)})
     }
     carouselMoviment = (counter) =>{
         const containerWidth = document.querySelector('.carouselHeader__fotoContainer').clientWidth/3
@@ -85,12 +89,55 @@ class Carousel extends Component{
 
     rightBtnHandler = () => this.carouselImgCounterDirection()
 
+    touchStart = event =>{
+
+        this.CAROUSEL_TOUCH_START = event.changedTouches[0].clientX
+        console.log(this.CAROUSEL_TOUCH_START);
+
+    }
+
+    touchMoviment = event =>{
+
+        const moviment = event.changedTouches[0].clientX
+        const movimentValue = moviment - this.CAROUSEL_TOUCH_START
+        
+        console.log(moviment);
+        console.log(movimentValue);
+
+        if(movimentValue < 0){
+            this.CAROUSEL_TOUCH_MOVIMENT = true
+            // this.carouselImgCounterDirection()
+
+        }
+
+        if(movimentValue > 0){
+            this.CAROUSEL_TOUCH_MOVIMENT = false
+            // this.carouselImgCounterDirection(false)
+
+        }
+
+        // console.log(movimentDirection);
+
+    }
+
+    touchEnd = event => {
+
+        this.carouselImgCounterDirection(this.CAROUSEL_TOUCH_MOVIMENT)
+
+
+
+
+    }
+
     
     render(){
         
         return (
             <div className='carouselHeader' onMouseEnter={this.carouselMouseEnterHandler} onMouseLeave={this.carouselMouseLeaveHandler}> 
-                <div className="carouselHeader__fotoContainer"> 
+                <div className="carouselHeader__fotoContainer" 
+                onTouchStart={this.touchStart} 
+                onTouchMove={this.touchMoviment}
+                onTouchEnd={this.touchEnd}> 
                     <CarouselPhoto classPhoto={`carouselHeader__fotoContainer__foto1`}/>
                     <CarouselPhoto classPhoto={`carouselHeader__fotoContainer__foto2`}/>
                     <CarouselPhoto classPhoto={`carouselHeader__fotoContainer__foto3`}/>

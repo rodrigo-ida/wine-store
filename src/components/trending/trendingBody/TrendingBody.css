@@ -9,18 +9,13 @@
 .trending__body__cards{
 
     width: 300vw;
-    height: 620px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     background-color: white;
-
     position: relative;
     left: 0px;
-    
-    
-    /* transition: left .2s ; */
     cursor: grab;
 }
 
@@ -29,7 +24,7 @@
 
     display: flex;
     width: 80px;
-    margin: 50px auto;
+    margin: 5px auto 20px auto;
     justify-content: space-between;
 }
 
