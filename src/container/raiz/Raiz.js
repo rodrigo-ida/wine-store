@@ -47,8 +47,6 @@ class Raiz extends Component {
             )
 
         }
-        console.log(windowWidth);
-        console.log(this.state.responsivityActivation);
     }
 
     burgerButtonHandler = ()=>{
@@ -57,7 +55,14 @@ class Raiz extends Component {
         this.setState({navBurgerBtnState: !navBurgerBtnState})
     }
     
-    showNavModal = event => this.setState({navModalState: event.target.className})
+    showNavModal = event => {
+        
+        this.setState({navModalState: event.target.className})
+        // this.setState({navModalState: 'navItem__vinhos'})
+        console.log(event.target.className);
+
+
+    }
 
 
     hideNavModal = () => this.setState({navModalState: false})

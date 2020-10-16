@@ -6,7 +6,6 @@ export default props => {
 
     let MOUSE_MOVIMENT = 0
     let DRAG_TOGGLE = false
-    let DRAG_TOGGLE_TOUCH = false
     let BTN_CLICK_COUNTER = 0
 
     let TOUCH_START = 0

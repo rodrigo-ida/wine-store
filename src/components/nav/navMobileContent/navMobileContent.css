@@ -6,6 +6,7 @@
     height: 55px;
 
 }
+
 .nav__burger-btn{
 
     background-color: transparent;
@@ -26,7 +27,7 @@
 }
 
 
-.nav__item__container__list__icones{
+.nav-mobile-content__list-icons{
     
     display: flex;
     width: 130px;
@@ -36,12 +37,12 @@
     
 }
 
-.nav__item__container__list__icones li{
+.nav-mobile-content__list-icons li{
     list-style: none;
     font-size: 20px;
 }
 
-.nav__item__container__list__icones__qtd{
+.nav-mobile-content__list-icons__qtd{
     position: relative;
     top: -50px;
     left: 14px;

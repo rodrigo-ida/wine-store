@@ -68,17 +68,15 @@
     .our-numbers-container{
 
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         display: flex;
         background-color: #faf7f2;
-        /* flex-direction: column; */
-        flex-wrap: wrap;
     
     }
     
     .our-numbers-container__img{
     
-        width: 100%;
+        width: 50%;
         height: 100%;
         background-image: url('../../assets/nossos-numeros.png');
         background-repeat: no-repeat;
@@ -89,7 +87,7 @@
     
     .our-numbers-container__numbers{
     
-        width: 100%;
+        width: 50%;
         text-align: left;
         line-height: 35px;
         color: #666666;

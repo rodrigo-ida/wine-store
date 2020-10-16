@@ -23,8 +23,8 @@ export default props => {
         modalElement = <CategoriesHover />
     }
 
-    return <div className="nav__item__container">
-        <ul className="nav__item__container__list"> 
+    return <div className="nav-desktop-content">
+        <ul className="nav-desktop-content__list"> 
             <NavItem showNavModal={props.showNavModal} navModalState={props.navModalState} hideNavModal={props.hideNavModal} modalElement={modalElement} classe="navItem__vinhos" >Vinhos</NavItem>
             <NavItem showNavModal={props.showNavModal} navModalState={props.navModalState} hideNavModal={props.hideNavModal} modalElement={modalElement} classe="navItem__acessorios" >Acessorios</NavItem>
             <NavItem  classe="navItem__tendencias" > <Link to='/trendingDestaque#tendencias'>Tendências </Link></NavItem>
@@ -33,10 +33,10 @@ export default props => {
             <NavItem  classe="navItem__contato" >Contato</NavItem>
             <NavItem  classe="navItem__sobre" >Sobre Nós</NavItem>
         </ul>
-        <ul className="nav__item__container__list__icones">
+        <ul className="nav-desktop-content__list__icons">
             <NavItem> <i className="fas fa-search"></i></NavItem>
             <NavItem> <i className="fas fa-user"></i> </NavItem>
-            <NavItem> <i className="fas fa-shopping-cart"></i><p className="nav__item__container__list__icones__qtd">0</p></NavItem>
+            <NavItem> <i className="fas fa-shopping-cart"></i><p className="nav-desktop-content__list__icons__qtd">0</p></NavItem>
         </ul>
     </div>
 }

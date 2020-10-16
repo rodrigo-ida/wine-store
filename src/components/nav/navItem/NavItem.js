@@ -13,9 +13,9 @@ export default props => {
 
 
     return(
-        <div onMouseEnter={props.showNavModal} onMouseLeave={props.hideNavModal} className="nav__item"> 
-            <li >{props.children}</li>
+        <div onMouseEnter={props.showNavModal} onMouseLeave={props.hideNavModal} className={props.classe} id="nav__item"> 
+            <li id="nav__item-li">{props.children}</li>
             {modal}
         </div>
-    )
+    ) 
 }

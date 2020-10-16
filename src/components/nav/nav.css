@@ -8,7 +8,7 @@ nav{
     z-index: 12;
 }
 
-
+/* 
 .nav__item__container{
     
     display: flex;
@@ -16,29 +16,26 @@ nav{
     justify-content: space-between;
 }
 
-.nav__item__container__list{  /* ul */
+.nav__item__container__list{  
 
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+ */
 
 
 
-.navItem__tendencias a{
-    
-    color: white;
-    text-decoration: none;
-}
 
 
-/* @media (min-width: 900px){
+ @media (min-width: 900px){
 
     nav{
         position: absolute;
     width: 100%;
     color: white;
     }
+/*     
     .nav__item__container{
         
         display: flex;
@@ -79,11 +76,6 @@ nav{
         border-radius: 20px;
         font-size: 14px;
         padding: 0px 6px;
-    }
+    } */
 
-    .navItem__tendencias a{
-        
-        color: white;
-        text-decoration: none;
-    }
-} */
+} 

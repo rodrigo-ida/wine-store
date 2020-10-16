@@ -5,7 +5,6 @@
     background-attachment: fixed;
     height: 40vh;
     width: 100%;
-    /* top: 133px; */
     background-position-y: -111px;
     background-position-x: center;
     
@@ -70,13 +69,16 @@
     
     .special-collection{
         
-        background-image: url('../../assets/specialColletionBackgroundImg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-image: url('../../assets/specialColletionBackgroundImg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-attachment: fixed;
     height: 465px;
     width: 100%;
     top: 133px; 
+    padding: 10px;
+    background-position-y: 0px;
+
     
 }
 
@@ -93,7 +95,7 @@
 .special-collection__description h1{
     
     font-size: 70px;
-    padding: 0;
+    padding:33px;
     
     
 }
@@ -111,7 +113,7 @@
     color: #ae8253;
     font-size: 74px;
     font-weight: lighter;
-    padding: 0;
+    padding: 37px;
     
 }
 

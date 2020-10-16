@@ -10,7 +10,14 @@ import NavBurgerModal from './navBurgerModal/NavBurgerModal'
 
 export default props =>{
 
-        const navContent = props.responsivityActivation ? <NavMobileContent burgerButtonHandler={props.burgerButtonHandler}/>: <NavDesktopContent />
+        const navContent = props.responsivityActivation ? 
+        <NavMobileContent burgerButtonHandler={props.burgerButtonHandler}/> : 
+        <NavDesktopContent 
+        showNavModal={props.showNavModal}
+        navModalState={props.navModalState}
+        hideNavModal={props.hideNavModal}
+
+        />
      
         return (
             <nav >
