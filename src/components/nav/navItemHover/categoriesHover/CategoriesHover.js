@@ -13,7 +13,7 @@ const CategoriasHover = props => {
             <ul className="categorias-hover__main-list">
                 <li>
                     <ul className="categorias-hover__first-list">
-                        <li>White Wine</li>
+                        <li>Vinho Branco</li>
                         <hr></hr>
                         <li>Sauvignon Blanc</li>
                         <li>Verdelho</li>
@@ -26,7 +26,7 @@ const CategoriasHover = props => {
                 </li>
                 <li>
                     <ul className="categorias-hover__second-list">
-                        <li>Red Wine</li>
+                        <li>Vinho Tinto</li>
                         <hr></hr>
                         <li>Cabernet Franc</li>
                         <li>Cabernet Sauvignon</li>
@@ -39,10 +39,7 @@ const CategoriasHover = props => {
             </ul>
             <div className="categorias-hover__img-bottom">
                 <img src={ImagemCategorias} alt="foto de vinho"/>
-                
             </div>
-
-
         </div>
     )
 }

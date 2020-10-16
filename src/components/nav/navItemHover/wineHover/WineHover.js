@@ -18,18 +18,18 @@ const WineHover = props => {
                     <ul className="wine-hover__list__types">
                         <li>Franceses</li>
                         <hr></hr>
-                        <li>Alsace wine</li>
-                        <li>Bordeaux wine</li>
-                        <li>Burgundy wine</li>
+                        <li>Alsace</li>
+                        <li>Bordeaux</li>
+                        <li>Burgundy</li>
                         <li>Loire Valley</li>
                         <li>Provence</li>
-                        <li>Region wine</li>
+                        <li>Region</li>
                         <li>Nebbiolo</li>
                     </ul>
                 </li>
                 <li>
                     <ul className="wine-hover__list__types">
-                        <li>Italian Wine</li>
+                        <li>Italianos</li>
                         <hr></hr>
                         <li>Sangiovese</li>
                         <li>Montepulciano</li>
@@ -37,20 +37,20 @@ const WineHover = props => {
                         <li>Primitivo</li>
                         <li>Dolcetto</li>
                         <li>Nebbiolo</li>
-                        <li>Monsant Wine</li>
+                        <li>Monsant</li>
                     </ul>
                 </li>
                 <li>
                     <ul className="wine-hover__list__types">
                         <li>Espanhóis</li>
                         <hr></hr>
-                        <li>Mallorca Wine</li>
-                        <li>Catlan Wine</li>
-                        <li>Terrerazo Wine</li>
-                        <li>Priorat Wine</li>
+                        <li>Mallorca</li>
+                        <li>Catlan</li>
+                        <li>Terrerazo</li>
+                        <li>Priorat</li>
                         <li>Ribera del Duero</li>
-                        <li>Monsant Wine</li>
-                        <li>Alsace wine</li>
+                        <li>Monsant</li>
+                        <li>Alsace</li>
                     </ul>
                 </li>
                 <li>

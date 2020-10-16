@@ -52,7 +52,7 @@ export default props => {
         <div className="shop-category"> 
             <div className="shop-category__img"></div>
             <div className="shop-category__description">
-                <h1>Escolha pela Categoria</h1>
+                <h1 className="shop-category__header">Escolha pela Categoria</h1>
                 <h2 className="shop-category__fantasy-header">Categorias</h2>
                 <div className="shop-category__description__categories"
                 onTouchStart={touchStart}

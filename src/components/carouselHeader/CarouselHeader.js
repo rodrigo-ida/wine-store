@@ -16,7 +16,7 @@ class Carousel extends Component{
 
     componentDidMount(){
 
-         this.execucaoCarousel(200000)
+         this.execucaoCarousel(4000)
 
     }
 
@@ -38,17 +38,19 @@ class Carousel extends Component{
             }
         }
             
-        this.setState({ carouselImgCounter: carouselImgCounter}, ()=> {this.carouselMoviment(this.state.carouselImgCounter)})
+        this.setState({ carouselImgCounter: carouselImgCounter}, ()=> this.carouselMoviment(this.state.carouselImgCounter))
     }
     carouselMoviment = (counter) =>{
         const containerWidth = document.querySelector('.carouselHeader__fotoContainer').clientWidth/3
         const container = document.querySelector('.carouselHeader__fotoContainer')
-        // let carouselImgCounter = this.state.carouselImgCounter
         container.style.left = containerWidth * counter + 'px'
 
     }
 
-    execucaoCarousel = intervalo => setInterval(() => {if(this.state.carouselActive) this.carouselImgCounterDirection()},intervalo);
+    execucaoCarousel = intervalo => setInterval(() => {
+        if(this.state.carouselActive) {
+            this.carouselImgCounterDirection()}
+        },intervalo);
 
     btnsProperties = (opacity, padding, btnMoviment) =>{
         
@@ -89,45 +91,25 @@ class Carousel extends Component{
 
     rightBtnHandler = () => this.carouselImgCounterDirection()
 
-    touchStart = event =>{
+    touchStart = event => this.CAROUSEL_TOUCH_START = event.changedTouches[0].clientX
 
-        this.CAROUSEL_TOUCH_START = event.changedTouches[0].clientX
-        console.log(this.CAROUSEL_TOUCH_START);
 
-    }
 
     touchMoviment = event =>{
 
         const moviment = event.changedTouches[0].clientX
         const movimentValue = moviment - this.CAROUSEL_TOUCH_START
-        
-        console.log(moviment);
-        console.log(movimentValue);
 
         if(movimentValue < 0){
             this.CAROUSEL_TOUCH_MOVIMENT = true
-            // this.carouselImgCounterDirection()
-
         }
-
         if(movimentValue > 0){
             this.CAROUSEL_TOUCH_MOVIMENT = false
-            // this.carouselImgCounterDirection(false)
-
         }
-
-        // console.log(movimentDirection);
-
     }
 
-    touchEnd = event => {
+    touchEnd = () => this.carouselImgCounterDirection(this.CAROUSEL_TOUCH_MOVIMENT)
 
-        this.carouselImgCounterDirection(this.CAROUSEL_TOUCH_MOVIMENT)
-
-
-
-
-    }
 
     
     render(){

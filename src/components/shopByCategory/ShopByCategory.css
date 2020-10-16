@@ -132,17 +132,21 @@
 @media (min-width: 900px){
 
     
-    .shop-category{
+.shop-category{
 
-        height: 715px;
-    width: 50%;
+    height: 715px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #faf7f2;
-    padding: 20px 0;
+    padding: 20px 30px;
 }
+.shop-category__header{
 
+    font-size: 40px;
+
+}
 .shop-category__fantasy-header{
     color: rgba(175, 131, 84, 0.2);
     font-size: 88px;
@@ -155,7 +159,7 @@
 
 .shop-category__img{
     background-image: url('../../assets/shopByCategoryImg.png');
-    width: 89%;
+    width: 50%;
     height: 100%;
     background-repeat: no-repeat;
     margin-top: 35px;
@@ -165,9 +169,11 @@
 
 .shop-category__description{
     
-    width: 100%;
+    width: 40%;
     height: 100%;
     overflow: hidden;
+    background-color: #faf7f2;
+    padding-top: 20px;
 
 }
 
@@ -181,6 +187,7 @@
     position: relative;
     left: 0;
     transition: left .2s ease-in-out;
+
     
 
     

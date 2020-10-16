@@ -20,7 +20,7 @@
 
 }
 
-/* 
+
 @media (min-width: 900px){
     .raiz{
 
@@ -38,11 +38,11 @@
     
     .main{
         background-color: white;
-        width: calc(100vw - 30px); 
+        width: calc(100vw - 15px); 
         margin-left: 15px;
         padding-top: 10px;
         margin-top: 167px;
     
     
     }
-} */
+} 
