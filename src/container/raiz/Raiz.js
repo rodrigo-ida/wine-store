@@ -5,7 +5,7 @@ import Header from '../../components/header/Header'
 import Nav from '../../components/nav/nav'
 import Carousel from '../../components/carouselHeader/CarouselHeader'
 import ScrollModal from '../../components/scrollModal/ScrollModal'
-import Sales from '../../components/promocoes/Promocoes'
+import Sales from '../../components/sales/Sales'
 import OurNumbers from '../../components/ourNumbers/OurNumbers'
 import Trending from '../../components/trending/Trending'
 import TrendingDestaque from '../../components/trending/trendingDestaque/TrendingDestaque'
@@ -36,8 +36,6 @@ class Raiz extends Component {
     }
 
     responsivityActivation = () => {
-
-
 
         const windowWidth = window.screen.width
         if(windowWidth < 900){

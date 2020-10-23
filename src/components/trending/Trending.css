@@ -14,7 +14,7 @@
 .trending__fantasy-header{
 
     color: rgba(175, 131, 84, 0.5);
-    font-size: 88px;
+    font-size: 75px;
     line-height: 0px;
     font-family: 'Great Vibes', cursive;
     letter-spacing: 10px;
@@ -87,7 +87,7 @@
     
 .trending{
 
-    width: 100vw;
+    width: 100%;
     padding-top: 35px;
 }
 
@@ -112,7 +112,7 @@
 
 .trending__buttons{
 
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 23px 368px;

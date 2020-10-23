@@ -126,7 +126,7 @@ border: none;
 }
 
 .footer__bottom{
-    height: 295px;
+    /* height: 295px; */
     background-color: #ae8253;
     width: 100%;
     padding-top: 20px;

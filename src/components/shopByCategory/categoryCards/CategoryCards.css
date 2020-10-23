@@ -21,9 +21,8 @@
     background-color: white;
     transition: all .5s ease-out, padding .5s ease-out;
     box-shadow: 1px 1px 2px thistle, -1px -1px 2px thistle;
-    height: 95px;
-    width: 95px;
-
+    height: 90px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
