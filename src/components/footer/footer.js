@@ -35,15 +35,15 @@ export default props =>{
                         <i className="fab fa-instagram"></i>
                         <i className="fab fa-pinterest-p"></i>
                 </div>
-                    <div className="footer__copyright" >
-                        <p>&#169; 2020, Todos os direitos reservados. Desenvolvido por Rodrigo Ida</p>
-                    </div>
-                    <div className="footer__cards">
-                        <div className="visa cards__icon"></div>
-                        <div className="paypal cards__icon"></div>
-                        <div className="mastercard cards__icon"></div>
-                        <div className="americanexpress cards__icon"></div>
-                    </div>
+                <div className="footer__copyright" >
+                    <p>&#169; 2020, Todos os direitos reservados. Desenvolvido por Rodrigo Ida</p>
+                </div>
+                <div className="footer__cards">
+                    <div className="visa cards__icon"></div>
+                    <div className="paypal cards__icon"></div>
+                    <div className="mastercard cards__icon"></div>
+                    <div className="americanexpress cards__icon"></div>
+                </div>
             </div>
 
 

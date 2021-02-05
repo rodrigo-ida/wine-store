@@ -4,6 +4,9 @@
 <img src="./github/carouselGif.gif" />  
 <img src="./github/trendingDrag.gif" />
 <img src="./github/modalPrint.png" />
+
+## Mobile Version
+<br/>
 <img src="./github/wineMobile-content.gif">
 
 

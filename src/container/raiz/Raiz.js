@@ -39,11 +39,10 @@ class Raiz extends Component {
 
         const windowWidth = window.screen.width
         if(windowWidth < 900){
-            this.setState({responsivityActivation: true}, ()=>console.log(this.state.responsivityActivation))
+            this.setState({responsivityActivation: true})
         }else{
             this.setState({responsivityActivation: false}
             )
-
         }
     }
 
@@ -56,8 +55,6 @@ class Raiz extends Component {
     showNavModal = event => {
         
         this.setState({navModalState: event.target.className})
-        // this.setState({navModalState: 'navItem__vinhos'})
-        console.log(event.target.className);
 
 
     }
